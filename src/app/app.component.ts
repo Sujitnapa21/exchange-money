@@ -35,11 +35,4 @@ export class AppComponent {
     }
   }
 
-  onChangeUSD() {
-    // this.baht = this.usd * 140;
-  }
-
-  onChangeBAHT() {
-    // this.usd = this.baht * 34;
-  }
 }

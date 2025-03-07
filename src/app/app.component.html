@@ -2,7 +2,6 @@
   <h2>Currency Exchange</h2>
   <div class="left-side">
     <app-usd-component
-      (ngModelChange)="onChangeUSD()"
       [(usd)]="usd"
       (usdChange)="calculateExchangeUSD($event)"
     ></app-usd-component>
@@ -10,7 +9,6 @@
   <div class="right-side">
     <app-baht-component
       [(baht)]="baht"
-      (ngModelChange)="onChangeBAHT()"
       (bahtChange)="calculateExchangeBAHT($event)"
     ></app-baht-component>
   </div>
