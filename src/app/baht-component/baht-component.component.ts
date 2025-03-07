@@ -10,14 +10,14 @@ import { FormsModule } from '@angular/forms';
   styleUrl: './baht-component.component.css'
 })
 export class BahtComponentComponent {
-  @Input() baht: number = 0;
-  @Output() bahtChange = new EventEmitter<number>();
+  @Input() bahtInput: number = 0;
+  @Output() bahtInputChange = new EventEmitter<number>();
 
-  onBahtChange(value: number) {
+  onBahtInputChange(value: number) {
     console.log('====================================');
     console.log(value);
     console.log('====================================');
-    this.bahtChange.emit(value);
+    this.bahtInputChange.emit(value);
   }
 
 }

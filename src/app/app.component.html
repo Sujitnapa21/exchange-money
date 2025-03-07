@@ -1,15 +1,15 @@
-<div>
+<div class="contianer">
   <h2>Currency Exchange</h2>
   <div class="left-side">
     <app-usd-component
-      [(usd)]="usd"
-      (usdChange)="calculateExchangeUSD($event)"
+      [(usdInput)]="usd"
+      (usdInputChange)="calculateExchangeUSD($event)"
     ></app-usd-component>
   </div>
   <div class="right-side">
     <app-baht-component
-      [(baht)]="baht"
-      (bahtChange)="calculateExchangeBAHT($event)"
+      [(bahtInput)]="baht"
+      (bahtInputChange)="calculateExchangeBAHT($event)"
     ></app-baht-component>
   </div>
 </div>

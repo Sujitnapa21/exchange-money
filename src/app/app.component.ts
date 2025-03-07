@@ -11,16 +11,14 @@ import { BahtComponentComponent } from './baht-component/baht-component.componen
 })
 export class AppComponent {
   usd: number = 0; // เงินเริ่มต้นใน USD
-  baht: number = 0; // เงินเริ่มต้นใน YEN
+  baht: number = 0; // เงินเริ่มต้นใน BAHT
 
-  usdValue: number = 0;
-  bahtValue: number =0;
 
   // ฟังก์ชันในการคำนวณอัตราแลกเปลี่ยน (สำหรับตัวอย่างนี้)
   calculateExchangeUSD(value: number) {
     const usdRate = 34;
     if (value !== null) {
-      return (this.baht = value * usdRate); // สมมุติว่าอัตราแลกเปลี่ยน 1 USD = 14
+      return (this.baht = value * usdRate); // สมมุติว่าอัตราแลกเปลี่ยน 1 USD = 0.030 BAHT
     } else {
       return (this.baht = 0);
     }
@@ -29,7 +27,7 @@ export class AppComponent {
   calculateExchangeBAHT(value: number) {
     const bahtRate = 0.030;
     if (value !== null) {
-      return (this.usd = value * bahtRate); // สมมุติว่าอัตราแลกเปลี่ยน 1 USD = 14
+      return (this.usd = value * bahtRate); // สมมุติว่าอัตราแลกเปลี่ยน 1 BAHT = 34 USD
     } else {
       return (this.usd = 0);
     }
